@@ -1,0 +1,52 @@
+.about > .about-desktop-tablet {
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+}
+.text > h4 {
+  text-decoration: underline;
+}
+.img-section {
+  width: 50%;
+  padding: 5px;
+  justify-content: center;
+  align-self: center;
+}
+.text {
+  width: 50%;
+  padding: 5px;
+  justify-content: center;
+  align-self: center;
+}
+
+@media (min-width: 50px) and (max-width: 575px) {
+  .about-desktop-tablet {
+    display: none;
+    width: 0px;
+  }
+  .section {
+    display: none;
+  }
+  .text {
+    display: none;
+  }
+
+  .about-mobile-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 50px) and (max-width: 575px) {
+  .about-desktop-tablet {
+    display: none;
+  }
+}
+@media (min-width: 575px) {
+  .about-mobile-cards {
+    display: none;
+  }
+}

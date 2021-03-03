@@ -1,0 +1,36 @@
+.care-guide-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-img-top {
+  height: 150px;
+}
+
+.card {
+  border-color: black;
+  width: 300px;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+.care-guide-page-title {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+@media (min-width: 50px) and (max-width: 775px) {
+  .care-guide-cards > .card {
+    position: relative;
+    width: 90vw;
+  }
+
+  .card-text {
+    padding: 15px;
+  }
+  .card-text > h5 {
+    font-size: 2em;
+    text-decoration: underline;
+  }
+}

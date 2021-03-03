@@ -1,0 +1,156 @@
+/* The hero image */
+.hero-image {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.black-overlay {
+  display: -webkit-flex; /*Safari */
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-text {
+  width: 55%;
+}
+
+h1.heading {
+  font-family: "Jost black";
+  color: var(--orange-red);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  word-spacing: 0.1em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  /* font-size: 40px; */
+}
+h2.subheading {
+  font-family: "Jost";
+  color: var(--light-blue);
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  word-spacing: 0.1em;
+  line-height: 1.2em;
+}
+
+.action-buttons {
+  margin-top: 50px;
+  font-family: "poppins";
+  height: 3em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin-right: 5px;
+  padding: 10px 20px;
+  width: 180px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none;
+}
+
+.btn.btn-danger {
+  background: var(--orange-red);
+  color: #ffffff;
+  border: 1px solid var(--orange-red);
+}
+
+.btn.btn-danger:hover {
+  background: rgb(163, 55, 38);
+  border: 1px solid rgb(163, 55, 38);
+  font-size: 1.1em;
+  position: relative;
+}
+.btn.btn-danger:focus,
+.btn.btn-danger:active,
+.btn.btn-danger.active {
+  background: red;
+}
+
+/* secondary btn */
+
+.btn.btn-outline-secondary {
+  color: white;
+  border: 1px solid white;
+}
+
+.btn.btn-outline-secondary:hover {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 1.1em;
+}
+.btn.btn-outline-secondary:active,
+.btn.btn-outline-secondary.active,
+.btn.open > .dropdown-toggle.btn-primary {
+  background: #33a6cc;
+}
+
+.btn.btn-outline-secondary:active,
+.btn.btn-outline-secondary.active {
+  background: #007299;
+  box-shadow: none;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media (min-width: 50px) and (max-width: 575px) {
+  .hero-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  h1.heading,
+  h2.heading {
+    font-size: 2rem;
+    text-shadow: -1px 1px 1.5px black;
+  }
+  .hero-image {
+    height: vh;
+  }
+  .heading {
+    margin-top: -100px;
+  }
+  .action-buttons {
+    margin: 3em 1em 0 3em;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-right: 0px;
+    font-size: 1.3em;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 1000px) {
+  .hero-image {
+    height: fit-content;
+  }
+  .hero-text {
+    margin-top: 40px;
+  }
+}

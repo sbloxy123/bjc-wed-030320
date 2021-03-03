@@ -1,0 +1,101 @@
+/* CONTACT FORM */
+.my-formy {
+  background: var(--salmon);
+  font-family: "roboto";
+  display: flex;
+  /* margin-top: 20px; */
+}
+.login-box {
+  height: 800px;
+}
+.login-title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3rem;
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0;
+}
+.form-control-label {
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+input[type="text"],
+input[type="email"],
+textarea[type="message"] {
+  background: var(--salmon);
+  border: none;
+  border-bottom: 2px solid white;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  color: #ecf0f5;
+}
+/* ::-webkit-resizer {
+  border: 2px solid white;
+  box-shadow: 0 0 5px 5px black;
+} */
+
+.form-control:focus {
+  border-color: inherit;
+  box-shadow: none;
+  border-bottom: 2px solid white;
+  outline: 0;
+  background-color: #222d32;
+  color: #ecf0f5;
+}
+/* ::-webkit-resizer {
+} */
+
+.form {
+  flex-grow: 2;
+}
+.form-elements {
+  max-width: 600px;
+  margin: auto;
+}
+.social {
+  flex-grow: 1;
+}
+.social {
+  background-color: var(--dark-brown);
+  height: 100%;
+}
+
+a.socialIcon {
+  transition: transform 250ms;
+  display: block;
+
+  margin: 70px auto 70px auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a.socialIcon:hover {
+  transform: translateY(-3px);
+}
+
+.youtube {
+  color: #eb3223 !important;
+}
+
+.facebook {
+  color: #4968ad !important;
+}
+
+.email {
+  color: #49a1eb !important;
+}
+
+.instagram {
+  color: rgb(192, 42, 104) !important;
+}

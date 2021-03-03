@@ -1,0 +1,29 @@
+.care-guide-template {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.guide-template-image {
+  width: 90vw;
+  height: 60vh;
+  margin: auto;
+}
+
+.guide-template-header {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.guide-template-text {
+  width: 65%;
+  margin: 0 auto 0px auto;
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .guide-template-text {
+    width: 90vw;
+  }
+  .guide-template-image {
+    width: 100vw;
+  }
+}

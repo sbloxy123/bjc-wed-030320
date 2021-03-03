@@ -1,0 +1,60 @@
+.main-imports-image {
+  height: 400px;
+  width: 90vw;
+  margin: auto;
+}
+
+.imports-title {
+  margin: 25px auto 40px auto;
+  width: 60vw;
+  text-align: center;
+}
+.imports-page > h2 {
+  text-align: center;
+}
+
+.imports-text {
+  width: 70%;
+  margin: auto;
+  margin: 30px auto 30px auto;
+}
+
+.fh-info,
+.fh-name {
+  width: 60%;
+  margin: 30px auto 30px auto;
+}
+.fh-info-image {
+  height: 300px;
+  width: 80%;
+  margin: 30px auto 30px auto;
+}
+
+@media (max-width: 1008px) {
+  .main-imports-image {
+    width: 100vw;
+    margin: 0px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-imports-image {
+    width: 100vw;
+    margin: 0px;
+    height: 100%;
+  }
+  .fh-info,
+  .imports-text {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1008px) {
+  .fh-info-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+}

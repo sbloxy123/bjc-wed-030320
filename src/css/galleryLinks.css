@@ -1,0 +1,33 @@
+.galleries {
+  background-color: var(--light-blue);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.galleries > h2 {
+  padding-top: 15px;
+  color: var(--darkblue-gray);
+}
+
+div.card-body {
+  padding: 10px;
+}
+@media (min-width: 50px) and (max-width: 575px) {
+  .gallery-links-cards > .card {
+    width: 90vw;
+    margin: 10px auto 10px auto;
+  }
+  div.card {
+    width: 90vw;
+  }
+  /* .gallery-links-cards {
+    width: 90vw;
+  } */
+}
+
+/* @media (min-width: 50px) and (max-width: 775px) {
+  .gallery-links-cards > .card {
+    position: relative;
+    width: 70vw;
+  }
+} */
